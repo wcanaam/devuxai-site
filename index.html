@@ -1,21 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DevuxAI</title>
-  <meta name="description" content="Unidade comercial de alta performance para empresas em crescimento." />
-  <style>
-    body {
-      margin: 0;
-      background: #0A0A0A;
-      color: #FFFFFF;
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevuxAI | Engenharia de Software & Inteligência Artificial</title>
+    <meta name="description" content="Soluções de alta performance e inteligência artificial para negócios que jogam um jogo diferente.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        devux: {
+                            black: '#0a0a0a',
+                            dark: '#121212',
+                            green: '#00ff41',
+                            gray: '#2d2d2d'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glow-text { text-shadow: 0 0 10px rgba(0, 255, 65, 0.5); }
+    </style>
 </head>
-<body>
-  <h1>DevuxAI</h1>
-  <p>Site em implantação.</p>
+<body class="bg-devux-black text-white antialiased selection:bg-devux-green selection:text-black">
+
+    <nav class="fixed w-full z-50 bg-devux-black/90 backdrop-blur-sm border-b border-devux-gray">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter">
+                DEVUX<span class="text-devux-green">AI</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+                <a href="#" class="hover:text-white transition-colors">Método</a>
+                <a href="#" class="hover:text-white transition-colors">Serviços</a>
+                <a href="#" class="hover:text-white transition-colors">Sobre</a>
+            </div>
+            <a href="https://wa.me/5583999999999" target="_blank" class="border border-devux-green text-devux-green px-5 py-2 text-sm font-bold hover:bg-devux-green hover:text-black transition-all duration-300">
+                CONTATO
+            </a>
+        </div>
+    </nav>
+
+    <section class="h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-devux-black/50 to-devux-black"></div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <div class="inline-block mb-4 px-3 py-1 border border-devux-gray rounded-full bg-devux-dark/50 backdrop-blur-md">
+                <span class="text-xs text-gray-400 uppercase tracking-widest">Alta Performance & IA</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                Construímos o futuro <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">enquanto eles dormem.</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto font-light">
+                Engenharia de software de elite e inteligência artificial aplicada para remover ineficiências e escalar resultados. Sem abstrações.
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <a href="#" class="bg-devux-green text-black px-8 py-4 font-bold text-lg hover:shadow-[0_0_20px_rgba(0,255,65,0.4)] transition-all transform hover:-translate-y-1">
+                    INICIAR PROJETO
+                </a>
+                <a href="#" class="px-8 py-4 font-medium text-gray-300 hover:text-white flex items-center gap-2 transition-colors">
+                    Conhecer Stack
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 border-t border-devux-gray bg-devux-dark text-center">
+        <p class="text-gray-500 text-sm">
+            &copy; 2026 DevuxAI. Todos os direitos reservados. <br>
+            <span class="text-xs opacity-50">Performance over comfort.</span>
+        </p>
+    </footer>
+
 </body>
 </html>
